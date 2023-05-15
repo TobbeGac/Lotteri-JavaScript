@@ -15,11 +15,11 @@ function buttonClick(e){
     console.log(`funkar e ${antalv}`)
 
 
-    if (antalv < 4 && antalv > 0){
-        alert("Slumpa lott")
+    if (antalv < 3 && antalv > 0){
+        //alert("Slumpa lott")
 
         for (i=0; i<antalv; i++){
-            let slumtal = Math.floor(Math.random() * antalv)
+            let slumtal = Math.floor(Math.random() * vinster.length)
 
             let t_vinst = vinster[slumtal]
             vinst += `<p> ${t_vinst} </p>`
